@@ -1,0 +1,47 @@
+.send {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send p {
+    padding: 12px;
+    background: #d7c1c1;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+.receive {
+    width: 100%;
+}
+
+.receive p {
+    width: 100%;
+    padding: 12px;
+    background: #f3eeeec9;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+.threads {
+    display: flex;
+    flex-direction: column;
+
+    height: 400px;
+    overflow: scroll;
+}
+
+.threads::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.threads {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.bottomOfChat {
+    height: 20px;
+    width: 100%;
+}

@@ -1,0 +1,129 @@
+.waveContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 164px;
+    --boxSize: 24px;
+    --gutter: 4px;
+    width: calc((var(--boxSize) + var(--gutter)) * 5);
+}
+
+.wave {
+    transform: scaleY(0.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: #12e2dc;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+}
+
+.wave1 {
+    -webkit-animation-name: quiet;
+    animation-name: quiet;
+}
+
+.wave2 {
+    -webkit-animation-name: normal;
+    animation-name: normal;
+}
+
+.wave3 {
+    -webkit-animation-name: quiet;
+    animation-name: quiet;
+}
+
+.wave4 {
+    -webkit-animation-name: loud;
+    animation-name: loud;
+}
+
+.wave5 {
+    -webkit-animation-name: quiet;
+    animation-name: quiet;
+}
+
+@-webkit-keyframes quiet {
+    25% {
+        transform: scaleY(0.6);
+    }
+    50% {
+        transform: scaleY(0.4);
+    }
+    75% {
+        transform: scaleY(0.8);
+    }
+}
+@keyframes quiet {
+    25% {
+        transform: scaleY(0.6);
+    }
+    50% {
+        transform: scaleY(0.4);
+    }
+    75% {
+        transform: scaleY(0.8);
+    }
+}
+@-webkit-keyframes normal {
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.4);
+    }
+    75% {
+        transform: scaleY(0.6);
+    }
+}
+@keyframes normal {
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.4);
+    }
+    75% {
+        transform: scaleY(0.6);
+    }
+}
+@-webkit-keyframes loud {
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.4);
+    }
+    75% {
+        transform: scaleY(1.2);
+    }
+}
+@keyframes loud {
+    25% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.4);
+    }
+    75% {
+        transform: scaleY(1.2);
+    }
+}
+
+.audioBot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.call {
+    background: #f3eeeec9;
+    border: none;
+    padding: 16px;
+    border-radius: 20px;
+    margin-top: 40px;
+}

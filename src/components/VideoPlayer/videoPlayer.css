@@ -1,0 +1,30 @@
+.videoPlayer {
+    height: 300px;
+    width: 300px;
+    background: #9aeaea94;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 24px;
+}
+
+video {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular shape */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: black;
+}
+
+button {
+    border: none;
+    background: #f3eeeec9;
+    padding: 16px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
